@@ -1,0 +1,24 @@
+dataset:
+  path: "experiment/dataset/CIFAR10_Dataset"
+  path_process: "experiment.dataset.configcifar10"
+  process_dataset_func: "get_dataset"
+  num_images: 100
+
+model:
+  weights_path: "experiment/model/CIFAR10/CIFAR10_PGD/cifar_r2_sh2.pt"
+  architectures:
+    - path: "experiment.model.CIFAR10.cifar10_config"
+      weight_loader: "load_model_weights_bias"
+
+
+
+solver:
+  config: ["shear", -0.02, 0.02, 0.02]
+  theta_batch_size: 1
+  methods: ["CROWN"]
+  KKT_samples: 100
+  KKT_samples_batch: 100
+  split_second_step: 2631
+  split_second_step_batch: 1000
+  tolerance_second_step: 0
+  display_info: False

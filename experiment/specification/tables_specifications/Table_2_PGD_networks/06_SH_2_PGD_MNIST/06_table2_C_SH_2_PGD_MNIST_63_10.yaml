@@ -1,0 +1,21 @@
+dataset:
+  path: "experiment/dataset/MNIST_Dataset"
+  path_process: "experiment.dataset.configmnist"
+  process_dataset_func: "get_dataset"
+  num_images: 100
+
+model:
+  weights_path: "experiment/model/MNIST/MNIST_PGD/mnist_sh2_r2_sc2_b2.pt"
+  architectures:
+    - path: "experiment.model.MNIST.mnist_config"
+      weight_loader: "load_model_weights_bias"
+
+solver:
+  config: ["shear", -0.02, 0.02, 0.04]
+  theta_batch_size: 100
+  methods: ["CROWN"]
+  KKT_samples: 10
+  KKT_samples_batch: 10
+  split_second_step: 63
+  split_second_step_batch: 63
+  display_info: False

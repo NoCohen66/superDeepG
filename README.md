@@ -127,4 +127,4 @@ For guidance on implementing the custom operators required for replication, we r
 
 
 
-For detailed mapping between the paper's experimental results and the artifact configurations, please refer to the provided PDF documentation.
+For detailed mapping between the paper's experimental results and the artifact configurations, please refer to the provided PDF documentation "Repeatability.pdf".

@@ -1,3 +1,13 @@
+##########################################################################
+##      This file is part of the Super-DeepG codebase,                 ##
+##      associated with the paper:                                     ##
+##                "Certified geometric robustness - Super-DeepG".      ##
+
+##     Developer: Noémie Cohen <noe.cohen14@yahoo.fr>                  ##
+##     Contributors: Mélanie Ducoffe, Timothée Fayard,                 ##    
+##     Christophe Gabreau, Claire Pagetti, Xavier Pucel                ##
+##########################################################################
+
 import matplotlib.pyplot as plt
 import numpy as np
 import yaml
